@@ -1,0 +1,296 @@
+body {
+    font-family: "Roboto Slab", serif;
+    background-color: #f5f7fada;
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0 auto;
+
+    &__content {
+        background-color: #ffffff;
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 15px 90px;
+    }
+}
+
+.about {
+    width: 500px;
+    margin-bottom: 40px;
+
+    &__position {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #595959;
+        margin-bottom: 10px;
+    }
+}
+
+/* projects styles */
+
+.projects {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+
+    width: 500px;
+    margin-bottom: 30px;
+
+    &__linkbox {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+        fill: currentColor;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        color: #000000;
+
+        margin-bottom: 4px;
+        transition: color 250ms linear;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fb6d3a;
+        }
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__role {
+        color: #fb6d3a;
+    }
+}
+
+.title {
+    font-size: 24px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.num-list {
+    padding: 0;
+    margin-left: 17px;
+
+    & ::marker {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.8;
+        color: #000000;
+    }
+}
+
+/* work styles */
+
+.work {
+    margin-bottom: 30px;
+    width: 525px;
+
+    &-company {
+        line-height: 1.25;
+        color: #fb6d3a;
+    }
+
+    &-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.period {
+    font-size: 12px;
+    color: #a8a8a8;
+}
+
+.pipe {
+    font-size: 12px;
+    line-height: 1.25;
+    color: #000000;
+    text-decoration: none;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fb6d3a;
+    }
+}
+
+.resp-list {
+    margin: 10px 0;
+    padding: 0;
+    margin-left: 17px;
+    list-style: disc;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #595959;
+}
+
+/* education styles */
+
+.university {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fb6d3a;
+    margin-bottom: 10px;
+}
+
+.faculty {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+/* sidebar styles */
+
+.sidebar {
+    background-color: #1a3a2e;
+    padding: 40px;
+    padding-top: 100px;
+    max-width: 370px;
+
+    &-title {
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+}
+
+/* photo styles */
+.photo {
+    margin-bottom: 15px;
+}
+
+/* sidebar content styles */
+.contacts,
+.tech-skills,
+.soft-skills,
+.lang {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contacts__list {
+    padding: 0;
+    list-style: none;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* contact type styles */
+.contact-type {
+    font-weight: 700;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+/* contact link styles */
+.contact-link {
+    text-decoration: underline;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.resources {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.resources__link {
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: color 250ms linear;
+}
+
+.resources__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    fill: currentColor;
+}
+
+.contact-link:hover,
+.resources__link:hover,
+.contact-link:focus,
+.resources__link:focus,
+.contact-link:active,
+.resources__link:active {
+    color: #fb6d3a;
+}
+
+/* tech and soft skills lists styles */
+.skills-list {
+    padding: 0;
+    margin-left: 17px;
+}
+
+.skills-lists-text {
+    color: #ffffff;
+}
+
+.skills-lists-item::marker,
+.lang-bracket {
+    color: #fb6d3a;
+    font-weight: 700;
+}
