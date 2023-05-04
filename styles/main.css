@@ -39,16 +39,22 @@ svg {
     margin-bottom: 40px;
 }
 
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about__position {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.7;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about__name {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1.2;
 }
 
@@ -72,8 +78,9 @@ svg {
 
 .projects__linkbox {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
-    align-items: center;
 }
 
 .projects__item:not(:last-child) {
@@ -87,8 +94,8 @@ svg {
 }
 
 .projects__link {
-    text-decoration: none;
-    color: #000000;
+    text-decoration: underline;
+    color: #2b068f;
     margin-bottom: 4px;
     transition: color 250ms linear;
 }
