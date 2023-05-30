@@ -39,7 +39,7 @@ svg {
     margin-bottom: 40px;
 
     &__position {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 14px;
         line-height: 1.7;
         color: #000000;
@@ -146,7 +146,6 @@ svg {
 
 .period {
     font-size: 12px;
-    color: #a8a8a8;
 }
 
 .pipe {
@@ -178,7 +177,6 @@ svg {
 .university {
     font-size: 16px;
     line-height: 1.25;
-    color: #fb6d3a;
     margin-bottom: 10px;
 }
 
@@ -271,7 +269,7 @@ svg {
 .resources__link:focus,
 .contact-link:active,
 .resources__link:active {
-    color: #fb6d3a;
+    color: #ffffff;
 }
 
 /* tech and soft skills lists styles */
@@ -286,6 +284,6 @@ svg {
 
 .skills-lists-item::marker,
 .lang-bracket {
-    color: #fb6d3a;
+    color: #ffffff;
     font-weight: 700;
 }
